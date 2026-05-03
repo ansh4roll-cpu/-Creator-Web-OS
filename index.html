@@ -1,0 +1,38 @@
+Index 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Creator OS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🚀 Creator Web OS</h1>
+
+<div class="apps">
+  <button onclick="openApp('script')">Script Generator</button>
+  <button onclick="openApp('video')">Video Generator</button>
+</div>
+
+<div id="window"></div>
+
+<script src="script.js"></script>
+<input 
+  type="text" 
+  id="search" 
+  placeholder="Search apps..." 
+  oninput="searchApps()" 
+/>
+<div id="spotlight" class="hidden">
+  <input 
+    type="text" 
+    id="spotlightInput" 
+    placeholder="Search apps..."
+    oninput="filterApps()"
+    onkeydown="handleEnter(event)"
+  />
+  <div id="results"></div>
+</div>
+<video src="www.mp4" style="display: none;" controls ></video>
+</body>
+</html>
